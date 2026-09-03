@@ -40,3 +40,9 @@ node_modules/
 .env
 .DS_Store
 
+
+# CV and LaTeX files
+*.tex
+*.pdf
+cv_*
+
