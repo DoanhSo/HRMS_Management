@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: hr-management-system-test
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+  flyway:
+    enabled: false
+
+  data:
+    redis:
+      repositories:
+        enabled: false
+
+  cache:
+    type: none
+
+  mail:
+    host: localhost
+    port: 25
+
+jwt:
+  secret: 9a2f8c4e1b7d6a5e3f2c1b4a6d8e0f2a4b6c8d0e2f4a6b8c0d2e4f6a8b0c2d4e
+  access-token-expiration-ms: 3600000
+  refresh-token-expiration-ms: 604800000

@@ -1,0 +1,148 @@
+﻿\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={CV - Nguyen Quoc Doanh},
+    pdfauthor={Nguyen Quoc Doanh}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{1.1}
+
+% Section formatting matching the sample exactly
+\newcommand{\cvsection}[1]{%
+  \vspace{7pt}%
+  \noindent\textbf{\large #1}\par%
+  \vspace{3pt}%
+}
+
+\begin{document}
+
+% =============================================================================
+% HEADER
+% =============================================================================
+\begin{center}
+    {\Large \textbf{NGUYEN QUOC DOANH}} \\[3pt]
+    (+84) 9xxxxxxxx --- doanhfilwl@gmail.com --- Hanoi, Vietnam \\[2pt]
+    \textbf{Fresher Java Developer} \\[2pt]
+    LinkedIn: \href{https://linkedin.com/in/ng-doanh}{ng-doanh} --- GitHub: \href{https://github.com/ng-doanh}{ng-doanh}
+\end{center}
+
+\vspace{-2pt}
+
+% =============================================================================
+% OBJECTIVE
+% =============================================================================
+\cvsection{OBJECTIVE}
+Third-year Information Technology student at Thuy Loi University with a solid foundation in algorithmic problem-solving, clean code architecture, and database optimization (\textbf{GPA: 3.12 / 4.0}). Experienced in engineering scalable enterprise web applications using \textbf{Java, Spring Boot, Spring Security, MySQL, Redis, and React/TypeScript}, paired with a solid background in software quality control and automated testing (134+ test cases, 100\% pass rate). Seeking a Fresher Java Developer position to contribute to high-quality software systems, optimize application performance, and adapt effectively to rigorous engineering standards.
+
+% =============================================================================
+% EDUCATION
+% =============================================================================
+\cvsection{EDUCATION}
+\noindent
+\textbf{Thuy Loi University} \hfill Aug 2023 -- Present \\
+Major: Information Technology \\
+GPA: 3.12 / 4.0
+
+% =============================================================================
+% ACHIEVEMENTS
+% =============================================================================
+\cvsection{ACHIEVEMENTS}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+    \item \textbf{Scientific Research 2026} --- Participated in University-level Scientific Research Project specializing in Web Application Architecture and High-Performance Backend Systems.
+    \item \textbf{Contender in the ICPC Vietnam National Round 2026}.
+    \item \textbf{Academic Encouragement Scholarship} --- Thuy Loi University (2024 -- 2025).
+    \item \textbf{Java (Basic / Intermediate) Skills Certification} --- HackerRank (2025).
+\end{itemize}
+
+% =============================================================================
+% SKILLS
+% =============================================================================
+\cvsection{SKILLS}
+\noindent
+\begin{tabular*}{\textwidth}{@{}p{0.32\textwidth} p{0.68\textwidth}@{}}
+\hline
+\textbf{Programming Languages} & Java (17/21), SQL, JavaScript, TypeScript, C++, HTML5/CSS3 \\
+\textbf{Frameworks \& Tools} & Spring Boot 3.x/4.x, Spring Data JPA, Spring Security, Spring WebMvc, Spring AOP, Vite, React 19 \\
+\textbf{Databases \& Core Tech} & MySQL, Redis, Flyway, B+Tree Compound Indexing, RBAC, 7-Layer Architecture \\
+\textbf{DevOps \& QA Support} & Git, GitHub, Docker, Docker Compose, Postman, Swagger/OpenAPI, Automated Testing \\
+\textbf{English} & B1 Level \\
+\textbf{Soft Skills} & Team Leadership, Analytical Thinking, Problem-solving, Fast Learner \\
+\end{tabular*}
+
+% =============================================================================
+% EXPERIENCE
+% =============================================================================
+\cvsection{EXPERIENCE}
+
+\noindent
+\textbf{Backend Developer} \hfill Apr 2026 -- Present \\
+\textit{SY Partners}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+    \item Developed and maintained core backend services using Java/Spring Boot and built responsive interfaces, adhering to strict enterprise software quality standards.
+    \item Designed RESTful APIs, optimized database queries, and implemented robust authentication and authorization mechanisms using JWT and Spring Security.
+    \item Collaborated with cross-functional teams to debug, refactor legacy modules, and enhance overall system performance and reliability.
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Intern Tester} \hfill Dec 2025 -- Mar 2026 \\
+\textit{Infinilab}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+    \item Analyzed software requirements, designed comprehensive test plans, and wrote detailed test cases for web application modules.
+    \item Executed manual functional and regression testing; identified bugs and tracked resolution via Jira to ensure release quality.
+    \item Worked alongside backend engineers to verify API behavior using Postman and assisted in improving automated testing processes.
+\end{itemize}
+
+\newpage % PAGE 2 (EXACTLY MATCHING SAMPLE PAGE 2)
+
+% =============================================================================
+% PROJECTS (100% JAVA)
+% =============================================================================
+\cvsection{PROJECTS}
+
+\noindent
+\textbf{Enterprise HR Management System (HRMS)} \hfill Feb 2026 -- Present \\
+\textit{Role: Team Leader \& Backend Developer} \hfill \href{https://github.com/ng-doanh/hr-management-system}{[GitHub Repository]} \\
+\textbf{Technologies Used:} Java 21, Spring Boot 4.1, Spring Security, JWT, Spring Data JPA, MySQL 8.0, Redis, React 19, Docker
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+    \item Designed system architecture, user management, Role-Based Access Control (RBAC), and automated Audit Logging (@Audited) for critical employee and payroll data tracking.
+    \item Developed functional modules including organization management, employee tracking, attendance logs, formula-driven automated payroll calculation, and periodic KPI appraisal.
+    \item Optimized MySQL InnoDB database query performance using B+Tree compound indexes (idx\_emp\_search, idx\_payroll\_period\_emp), cutting complex query latency by over 60\%; integrated Redis caching for master data.
+    \item Engineered a thread-safe business code auto-generator (CodeGeneratorUtil) supporting zero-padded sequential codes (EMP-00001, DEPT-00001) with gap-handling and custom override validation.
+    \item Implemented robust 3-tier testing (Unit Testing with Mockito, Controller Testing with MockMvc, and H2 in-memory Database Integration Testing) with 134+ test cases, achieving 100\% pass rate. Containerized application stack using Docker Compose.
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent
+\textbf{E-Commerce \& Order Processing Platform} \hfill Oct 2025 -- Jan 2026 \\
+\textit{Role: Leader, Backend Developer} \hfill \href{https://github.com/ng-doanh/ecommerce-api}{[GitHub Repository]} \\
+\textbf{Technologies Used:} Java 17, Spring Boot, Spring Security, Spring Data JPA, MySQL, Redis, Docker, Swagger/OpenAPI
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+    \item Led the development team, established Git workflow strategies, managed feature branching, and oversaw overall project progress.
+    \item Designed scalable MySQL database schemas and built RESTful API endpoints using Spring Boot containerized with Docker to serve application features.
+    \item Handled concurrent high-traffic order placement race conditions using JPA Optimistic Locking (@Version) to prevent overselling inventory.
+    \item Integrated Redis distributed caching to cache high-traffic product catalog queries, significantly reducing database read latency.
+    \item Documented all REST APIs using Swagger/OpenAPI 3.0 and implemented unit test coverage for core business services.
+\end{itemize}
+
+% =============================================================================
+% INTERESTS
+% =============================================================================
+\cvsection{INTERESTS}
+Backend System Architecture, Database Optimization, Competitive Programming, Sports, Cooking, Gaming
+
+\end{document}
