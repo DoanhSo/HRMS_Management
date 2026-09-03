@@ -1,0 +1,98 @@
+﻿\documentclass[10pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.5in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\linespread{1.06}
+\setlength{\parindent}{0pt}
+
+% Section Titles: Clean horizontal divider
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\normalsize\bfseries
+}{}{0em}{}[\vspace{1.5pt}\hrule\vspace{3.5pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\begin{document}
+
+% =============================================================================
+% HEADER
+% =============================================================================
+\begin{center}
+    {\LARGE \textbf{NGUYEN QUOC DOANH}} \\[3pt]
+    {\normalsize \textbf{Java Developer Intern \enspace$|$\enspace Spring Boot \& MySQL Specialist}} \\[3pt]
+    \small
+    (+84) 9xxxxxxxx \enspace$|$\enspace 
+    \href{mailto:doanhfilwl@gmail.com}{doanhfilwl@gmail.com} \enspace$|$\enspace 
+    \href{https://github.com/ng-doanh}{github.com/ng-doanh} \enspace$|$\enspace 
+    \href{https://linkedin.com/in/ng-doanh}{linkedin.com/in/ng-doanh} \enspace$|$\enspace 
+    Hanoi, Vietnam
+\end{center}
+
+\vspace{-4pt}
+
+% =============================================================================
+% PROFILE / SUMMARY
+% =============================================================================
+\section{Profile}
+Final-year Information Technology student (\textbf{GPA: 3.12 / 4.00}) specializing in Java Backend Development. Demonstrated hands-on experience in architecting scalable RESTful APIs, securing enterprise applications, and optimizing database performance using \textbf{Java (17/21), Spring Boot, Spring Security, JPA/Hibernate, MySQL}, and \textbf{Docker}. Passionate about clean layered architecture, database indexing, and automated testing (134+ test cases, 100\% pass rate). Seeking a \textbf{Java Backend Developer Internship} to contribute to production-grade software systems.
+
+% =============================================================================
+% TECHNICAL SKILLS
+% =============================================================================
+\section{Technical Skills}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.8pt, topsep=2pt]
+    \item \textbf{Programming Languages:} Java (17/21), SQL, JavaScript, TypeScript, HTML5/CSS3
+    \item \textbf{Backend Frameworks:} Spring Boot 3.x/4.x, Spring Data JPA, Spring Security, Spring WebMvc, Spring AOP, Hibernate ORM
+    \item \textbf{Frontend Integration:} React 19, TypeScript, Vite, Tailwind CSS, Axios, REST API Integration
+    \item \textbf{Databases \& Storage:} MySQL 8.x (InnoDB, B+Tree Compound Indexing, EXPLAIN Query Tuning), H2 DB, Flyway
+    \item \textbf{DevOps \& Tools:} Git, GitHub, Docker, Docker Compose, Maven, Postman, Swagger/OpenAPI 3.0, Apache POI
+    \item \textbf{Architecture \& Testing:} 7-Layer Architecture, OOP, RESTful API Standards, JWT \& RBAC, JUnit 5, Mockito
+\end{itemize}
+
+% =============================================================================
+% PROJECTS (100% JAVA, NO REDIS)
+% =============================================================================
+\section{Projects}
+
+\textbf{Enterprise HR Management System (HRMS)} \hfill Feb 2026 -- Present \\
+\textit{Tech Stack: Java 21, Spring Boot, Spring Security, JWT, Spring Data JPA, MySQL, React 19, TypeScript, Docker} \\
+\textit{GitHub: \href{https://github.com/ng-doanh/hr-management-system}{github.com/ng-doanh/hr-management-system}}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.8pt, topsep=2pt]
+    \item Designed and implemented a modular \textbf{7-layer enterprise architecture} (Entity, DTO, Mapper, Repository, Service, Controller, Global Exception Handler) covering 14 core domains: Employees, Attendance, Payroll, and KPI.
+    \item Implemented stateless authentication and fine-grained authorization with \textbf{Spring Security, JWT (Access + Refresh Token rotation)}, BCrypt password hashing, and method-level Role-Based Access Control (@PreAuthorize).
+    \item Developed an automated, formula-driven \textbf{Payroll Engine} integrating dynamic salary scale coefficients, attendance deductions, and periodic weighted KPI appraisal bonuses with automatic grading tiers (A/B/C/D).
+    \item Conducted query performance tuning on MySQL InnoDB via EXPLAIN execution plans and implemented \textbf{B+Tree compound indexes} (idx\_emp\_search, idx\_payroll\_period\_emp), reducing search latency by over \textbf{60\%} and eliminating slow full-table scans.
+    \item Built an enterprise utility suite: Spring AOP-driven \textbf{Audit Logging} (@Audited) tracking data mutations, real-time \textbf{WebSocket push notifications}, batch Excel import/export (Apache POI), and payslip PDF generation (OpenPDF).
+    \item Engineered a thread-safe, collision-free \textbf{Business Code Generator} (CodeGeneratorUtil) with sequential zero-padding (EMP-00001, DEPT-00001) and gap-handling, while supporting custom manual code overrides with unique validation.
+    \item Established an exhaustive automated test suite of \textbf{134+ tests} (Unit Mockito, WebMvc, H2 DB Integration) with \textbf{100\% pass rate}. Containerized the backend and frontend using multi-stage Docker builds and Docker Compose.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{E-Commerce \& Order Processing RESTful API} \hfill Oct 2025 -- Jan 2026 \\
+\textit{Tech Stack: Java 17, Spring Boot, Spring Security, JWT, Spring Data JPA, MySQL, Docker, Swagger/OpenAPI} \\
+\textit{GitHub: \href{https://github.com/ng-doanh/ecommerce-api}{github.com/ng-doanh/ecommerce-api}}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.8pt, topsep=2pt]
+    \item Designed relational database schemas for product catalog, shopping cart, order processing, and payment status tracking.
+    \item Implemented RESTful APIs for customer authentication, product filtering/search, and checkout flows with strict input validation.
+    \item Handled concurrent order placement race conditions using \textbf{JPA Optimistic Locking} (@Version) to prevent overselling inventory.
+    \item Optimized database access patterns using JPA pagination, batch fetching, and selective indexing to minimize database read overhead.
+    \item Documented all endpoints via \textbf{Swagger/OpenAPI 3.0} and configured containerized deployment using Docker.
+\end{itemize}
+
+% =============================================================================
+% EDUCATION
+% =============================================================================
+\section{Education}
+\textbf{Thuy Loi University} \hfill Hanoi, Vietnam \\
+\textit{Bachelor of Science in Information Technology} \hfill Aug 2023 -- Expected 2027 \\
+\textit{Cumulative GPA: \textbf{3.12 / 4.00}} \\
+{\small \textit{Relevant Coursework: Object-Oriented Programming (Java), Data Structures \& Algorithms, Database Systems, Software Engineering, Web Application Development, Computer Networks, Operating Systems.}}
+
+\end{document}
